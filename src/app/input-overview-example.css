@@ -1,0 +1,20 @@
+.pos-table {
+  width: 200px;
+  font-size: 20px;
+  text-align: end;
+}
+.hemi{
+  width: 50px;
+}
+.longitude{
+  width: 40px;
+}
+.minute{
+  width: 30px;
+}
+.decimal{
+  width: 50px;
+}
+.one-char{
+    width: 20px;
+}

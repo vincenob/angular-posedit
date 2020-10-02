@@ -1,0 +1,29 @@
+
+<table class="pos-table">
+	<td>
+			<mat-select class="hemi" [(value)]="selectedWestEast">
+				<mat-option value="west">W</mat-option>
+				<mat-option value="east">E</mat-option>
+			</mat-select>
+	</td>
+	<td>
+			<input #lon_degree class="longitude" matInput type="tel" maxlength="3" placeholder="000" (keyup)="onKey($event)" [(ngModel)]="lonDegree">
+	</td>
+	<td>
+		<mat-label class="one-char">°</mat-label>
+	</td>
+
+	<td>
+
+			<input #lon_minute class="minute" matInput type="tel" placeholder="00" maxlength="2"/>
+	</td>
+
+	<td>
+		<mat-label class="one-char">.</mat-label>
+	</td>
+	<td>
+			<input #lon_decimal class="decimal" matInput type="tel" placeholder="0000" maxlength="4"/>
+	</td>
+</table>
+
+<button mat-raised-button (click)="focusNext()">next</button>
